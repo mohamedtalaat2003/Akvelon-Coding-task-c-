@@ -1,7 +1,9 @@
-﻿public class FizzBuzzDetector
+﻿using Akvelon_Coding_task_c_;
+
+public class FizzBuzzDetector
 {
 
-    public FizzBuzzDetector getOverlappings(string input)
+    public FizzBuzzResult getOverlappings(string input)
     {
         List<string> words = new();
 
@@ -50,7 +52,7 @@
             count++;
         }
 
-        return new FizzBuzzDetector
+        return new FizzBuzzResult
         {
             Output = string.Join("", words),
             Count = count
