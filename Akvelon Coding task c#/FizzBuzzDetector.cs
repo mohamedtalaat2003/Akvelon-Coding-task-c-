@@ -52,6 +52,12 @@
 
             count++;
         }
+
+        return new FizzBuzzDetector
+        {
+            Output = string.Join("", words),
+            Count = count
+        };
     }
 
     private bool IsAlphanumeric(char c)
