@@ -17,3 +17,4 @@ Console.WriteLine("Output:");
 Console.WriteLine(result.Output);
 
 Console.WriteLine("Count: " + result.Count);
+
