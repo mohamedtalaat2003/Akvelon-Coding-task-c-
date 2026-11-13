@@ -1,4 +1,5 @@
-﻿FizzBuzzDetector detector = new FizzBuzzDetector();
+﻿using Akvelon_Coding_task_c_;
+FizzBuzzDetector detector = new FizzBuzzDetector();
 
 string input = """
 Mary had a little lamb
@@ -10,9 +11,9 @@ Mary had a little lamb
 It's fleece was white as snow
 """;
 
-detector.getOverlappings(input);
+FizzBuzzResult result = detector.getOverlappings(input);
 
 Console.WriteLine("Output:");
-Console.WriteLine(detector.Output);
+Console.WriteLine(result.Output);
 
-Console.WriteLine("Count: " + detector.Count);
+Console.WriteLine("Count: " + result.Count);
