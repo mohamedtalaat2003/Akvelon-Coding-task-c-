@@ -30,6 +30,28 @@
 
             words.Add(element);
         }
+
+        int wordCount = 0;
+        int count = 0;
+
+        for (int j = 0; j < words.Count; j++)
+        {
+            if (!IsAlphanumeric(words[j][0]))
+                continue;
+
+            wordCount++;
+
+            if (wordCount % 15 == 0)
+                words[j] = "FizzBuzz";
+            else if (wordCount % 3 == 0)
+                words[j] = "Fizz";
+            else if (wordCount % 5 == 0)
+                words[j] = "Buzz";
+            else
+                continue;
+
+            count++;
+        }
     }
 
     private bool IsAlphanumeric(char c)
