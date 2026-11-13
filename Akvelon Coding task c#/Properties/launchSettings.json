@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Akvelon Coding task c#": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
