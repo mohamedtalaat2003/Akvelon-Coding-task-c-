@@ -4,7 +4,9 @@ using System.Text;
 
 namespace Akvelon_Coding_task_c_
 {
-    internal class FizzBuzzResult
+    public class FizzBuzzResult
     {
+        public string Output { get; set; } = "";
+        public int Count { get; set; }
     }
 }
